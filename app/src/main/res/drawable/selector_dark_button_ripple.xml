@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- 默认背景 -->
+    <item android:state_enabled="true" android:state_pressed="false">
+        <shape>
+            <solid android:color="@color/colorPrimaryDarker"/>
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+    <!-- 点击背景 -->
+    <item android:state_enabled="true" android:state_pressed="true">
+        <shape>
+            <solid android:color="@color/colorPrimaryDarkest"/>
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+    <!-- 控件不可用 -->
+    <item android:state_enabled="false">
+        <shape>
+            <solid android:color="@color/colorDarkestBackground"/>
+            <corners android:radius="10dp"/>
+        </shape>
+    </item>
+</selector>

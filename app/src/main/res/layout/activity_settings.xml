@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:gravity="center_vertical"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/llBack"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="@dimen/title_length"
+            android:layout_height="@dimen/title_height"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:clickable="true">
+            <ImageView
+                app:srcCompat="@drawable/icon_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"/>
+        </LinearLayout>
+        <TextView
+            android:text="@string/title_settings"
+            android:textColor="@color/colorTitleText"
+            android:textSize="@dimen/title_text_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_margin_big" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/selector_background_ripple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_small"
+        android:padding="@dimen/activity_padding_big"
+        android:orientation="horizontal"
+        android:clickable="true">
+        <TextView
+            android:text="邮箱"
+            android:textColor="@color/colorDarkText"
+            android:textSize="@dimen/title_text_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:id="@+id/tvEmail"
+            android:textColor="@color/colorDarkText"
+            android:textSize="@dimen/title_text_middle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:hint="未设置" />
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/llPassword"
+        android:background="@drawable/selector_background_ripple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/items_margin_1dp"
+        android:padding="@dimen/activity_padding_big"
+        android:orientation="horizontal"
+        android:clickable="true">
+        <TextView
+            android:text="修改账户密码"
+            android:textColor="@color/colorDarkText"
+            android:textSize="@dimen/title_text_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llBanMessage"
+        android:background="@drawable/selector_background_ripple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_small"
+        android:paddingLeft="@dimen/activity_padding_big"
+        android:paddingRight="@dimen/activity_padding_big"
+        android:paddingTop="@dimen/activity_margin_middle"
+        android:paddingBottom="@dimen/activity_margin_middle"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:clickable="true">
+        <TextView
+            android:text="禁用消息推送"
+            android:textColor="@color/colorDarkText"
+            android:textSize="@dimen/title_text_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <CheckBox
+            android:id="@+id/cbBanMessage"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:clickable="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llBanWelcomePage"
+        android:background="@drawable/selector_background_ripple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/items_margin_1dp"
+        android:paddingLeft="@dimen/activity_padding_big"
+        android:paddingRight="@dimen/activity_padding_big"
+        android:paddingTop="@dimen/activity_margin_middle"
+        android:paddingBottom="@dimen/activity_margin_middle"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:clickable="true">
+        <TextView
+            android:text="禁用启动动画"
+            android:textColor="@color/colorDarkText"
+            android:textSize="@dimen/title_text_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <CheckBox
+            android:id="@+id/cbBanWelcomePage"
+            android:background="@null"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right"
+            android:clickable="false"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/llAbout"
+        android:background="@drawable/selector_background_ripple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_small"
+        android:padding="@dimen/activity_padding_big"
+        android:orientation="horizontal"
+        android:clickable="true">
+        <TextView
+            android:text="关于"
+            android:textColor="@color/colorDarkText"
+            android:textSize="@dimen/title_text_middle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <Button
+        android:id="@+id/buttonExit"
+        android:text="@string/button_exit"
+        android:textColor="@color/colorLightText"
+        android:textStyle="bold"
+        android:background="@drawable/selector_dark_button_ripple"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_margin_big"/>
+
+</LinearLayout>

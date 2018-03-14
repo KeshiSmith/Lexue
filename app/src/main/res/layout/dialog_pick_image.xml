@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorDarkBackground">
+
+    <Button
+        android:id="@+id/buttonTakePhoto"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_middle"
+        android:layout_marginLeft="@dimen/activity_margin_middle"
+        android:layout_marginRight="@dimen/activity_margin_middle"
+        android:background="@color/colorPrimary"
+        android:text="@string/dialog_take_photo"
+        android:textSize="@dimen/title_text_middle"
+        android:textColor="@color/colorLightText"/>
+
+    <Button
+        android:id="@+id/buttonPickImage"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_small"
+        android:layout_marginLeft="@dimen/activity_margin_middle"
+        android:layout_marginRight="@dimen/activity_margin_middle"
+        android:background="@color/colorPrimary"
+        android:text="@string/dialog_pick_image"
+        android:textSize="@dimen/title_text_middle"
+        android:textColor="@color/colorLightText"/>
+
+    <Button
+        android:id="@+id/buttonBack"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/activity_margin_middle"
+        android:background="@color/colorBackground"
+        android:text="@string/dialog_back"
+        android:textSize="@dimen/title_text_middle"
+        android:textColor="@color/colorDarkText"/>
+
+</LinearLayout>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/colorBackground">
+
+    <TextView
+        android:id="@+id/textViewTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginLeft="@dimen/activity_margin_small"
+        android:padding="@dimen/activity_margin_big"
+        android:text="课程名称"
+        android:textColor="@color/colorDarkText"
+        android:textSize="@dimen/title_text_middle"/>
+    <CheckBox
+        android:id="@+id/checkboxTag"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="@dimen/activity_margin_small"
+        android:paddingTop="@dimen/activity_padding_small"
+        android:paddingBottom="@dimen/activity_padding_small"
+        android:paddingLeft="@dimen/activity_padding_middle"
+        android:paddingRight="@dimen/activity_padding_middle"
+        android:button="@null"
+        android:background="@drawable/selector_radio_button_ripple"
+        android:text="未关注"
+        android:textColor="@color/colorLightText"/>
+
+</LinearLayout>

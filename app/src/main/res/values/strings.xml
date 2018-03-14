@@ -1,0 +1,44 @@
+<resources>
+    <string name="app_name">乐学</string>
+    <string name="exit_confirm">再按一次退出</string>
+
+    <string name="title">标题</string>
+    <string name="title_back">返回</string>
+    <string name="title_home">主页</string>
+    <string name="title_search">搜索</string>
+    <string name="title_user">用户</string>
+    <string name="title_user_detail">个人资料</string>
+    <string name="title_save">保存</string>
+    <string name="title_settings">设置</string>
+
+    <string name="text_forgive_password">忘记密码?</string>
+    <string name="msg_register">我要注册</string>
+    <string name="button_login">登陆</string>
+    <string name="button_register">注册</string>
+    <string name="text_nickName">昵称：</string>
+    <string name="text_email">邮箱：</string>
+    <string name="text_password">密码：</string>
+
+    <string name="hint_nickname">请输入昵称</string>
+    <string name="hint_email">请输入邮箱地址</string>
+    <string name="hint_password">请输入账号密码，长度为6~16位</string>
+
+    <string name="type_student">学生注册</string>
+    <string name="type_teacher">老师注册</string>
+
+    <string name="button_exit">退出登录</string>
+
+    <string name="user_title">我</string>
+    <string name="user_name">用户名</string>
+    <string name="user_words">这个人很懒，什么也没有留下~</string>
+    <string name="user_favorite">收藏的文章</string>
+    <string name="user_history">浏览过的文章</string>
+    <string name="user_tag">课程管理</string>
+    <string name="user_settings">设置</string>
+
+    <string name="title_tags">课程管理</string>
+
+    <string name="dialog_take_photo">照相</string>
+    <string name="dialog_pick_image">从相册选择</string>
+    <string name="dialog_back">返回</string>
+</resources>

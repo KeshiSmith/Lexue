@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:padding="4dp">
+
+        <SearchView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/shape_search_view_background"
+            android:iconifiedByDefault="false"
+            android:queryHint="搜索文章，讲座" />
+
+    </LinearLayout>
+
+    <com.sivin.Banner
+        android:id="@+id/banner"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        app:banner_pointGravity="center_horizontal" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackground"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/llTopic"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_background_ripple"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_padding_big">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/icon_topic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="热门文章"
+                android:textColor="@color/colorDarkestText"
+                android:textSize="@dimen/title_text_middle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llLecture"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_background_ripple"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_padding_big">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/icon_lecture" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="讲座活动"
+                android:textColor="@color/colorDarkestText"
+                android:textSize="@dimen/title_text_middle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llCourse"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_background_ripple"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_padding_big">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/icon_course" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="课程查询"
+                android:textColor="@color/colorDarkestText"
+                android:textSize="@dimen/title_text_middle" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llColumn"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/selector_background_ripple"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/activity_padding_big">
+
+            <ImageView
+                android:layout_width="@dimen/icon_size"
+                android:layout_height="@dimen/icon_size"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/icon_column" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="专题专栏"
+                android:textColor="@color/colorDarkestText"
+                android:textSize="@dimen/title_text_middle" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

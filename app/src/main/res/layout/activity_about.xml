@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:gravity="center_vertical"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/llBack"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="@dimen/title_length"
+            android:layout_height="@dimen/title_height"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:clickable="true">
+            <ImageView
+                app:srcCompat="@drawable/icon_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvTitle"
+            android:text="关于"
+            android:textColor="@color/colorTitleText"
+            android:textSize="@dimen/title_text_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_margin_big" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:src="@drawable/four_leaved_clover"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:scaleType="centerInside"/>
+
+    <TextView
+        android:text="名称：乐学"
+        android:textColor="@color/colorLightText"
+        android:textSize="@dimen/title_text_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="@dimen/activity_margin_big"/>
+    <TextView
+        android:text="版本：v1.0"
+        android:textColor="@color/colorLightText"
+        android:textSize="@dimen/title_text_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_margin_big"
+        android:layout_marginTop="@dimen/activity_margin_small"/>
+    <TextView
+        android:text="指导老师：朱真峰老师"
+        android:textColor="@color/colorLightText"
+        android:textSize="@dimen/title_text_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_margin_big"
+        android:layout_marginTop="@dimen/activity_margin_small"/>
+    <TextView
+        android:text="策划支持：靳晓彤，简相杰，周琦梦"
+        android:textColor="@color/colorLightText"
+        android:textSize="@dimen/title_text_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_margin_big"
+        android:layout_marginTop="@dimen/activity_margin_small"/>
+    <TextView
+        android:text="技术支持：窦金兰，时田田，任东鸽，郑浩楠"
+        android:textColor="@color/colorLightText"
+        android:textSize="@dimen/title_text_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_margin_big"
+        android:layout_marginTop="@dimen/activity_margin_small"/>
+    <TextView
+        android:text="运营支持：李金红，周雅晴，宋次剑"
+        android:textColor="@color/colorLightText"
+        android:textSize="@dimen/title_text_middle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/activity_margin_big"
+        android:layout_marginTop="@dimen/activity_margin_small"/>
+
+</LinearLayout>

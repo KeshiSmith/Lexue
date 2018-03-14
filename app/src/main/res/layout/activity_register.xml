@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:background="@color/colorPrimary"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:id="@+id/buttonBack"
+            android:layout_width="@dimen/title_length"
+            android:layout_height="@dimen/title_height"
+            android:background="?android:attr/selectableItemBackground"
+            android:clickable="true"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"
+                app:srcCompat="@drawable/icon_back" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_margin_big"
+            android:text="@string/title_back"
+            android:textColor="@color/colorTitleText"
+            android:textSize="@dimen/title_text_big" />
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/image"
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:layout_marginTop="20dp"
+        android:scaleType="fitCenter"
+        android:src="@drawable/title" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_padding_big"
+        android:paddingRight="@dimen/activity_padding_big">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/text_nickName"
+            android:textColor="@color/colorLightText" />
+
+        <EditText
+            android:id="@+id/editTextNickname"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="@string/hint_nickname"
+            android:maxLength="16"
+            android:textColorHint="@color/colorLightText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_padding_big"
+        android:paddingRight="@dimen/activity_padding_big">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="邮箱："
+            android:textColor="@color/colorLightText" />
+
+        <com.zw.lexue.widgets.EmailAutoCompleteTextView
+            android:id="@+id/emailTextViewRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:maxLength="64"
+            android:textColorHint="@color/colorLightText" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="@dimen/activity_padding_big"
+        android:paddingRight="@dimen/activity_padding_big">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="密码："
+            android:textColor="@color/colorLightText" />
+
+        <EditText
+            android:id="@+id/editTextPasswordRegister"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:hint="@string/hint_password"
+            android:inputType="textPassword"
+            android:maxLength="16"
+            android:textColorHint="@color/colorLightText" />
+    </LinearLayout>
+
+    <RadioGroup
+        android:id="@+id/radioGroupType"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/activity_margin_small"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal" >
+
+        <RadioButton
+            android:id="@+id/radioButtonStudents"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/activity_margin_big"
+            android:padding="@dimen/activity_padding_small"
+            android:button="@null"
+            android:background="@drawable/selector_radio_button_ripple"
+            android:text="@string/type_student"
+            android:textColor = "@color/colorLightText"
+            android:checked="true"/>
+
+        <RadioButton
+            android:id="@+id/radioButtonTeachers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_margin_big"
+            android:padding="@dimen/activity_padding_small"
+            android:button="@null"
+            android:background="@drawable/selector_radio_button_ripple"
+            android:text="@string/type_teacher"
+            android:textColor = "@color/colorLightText"/>
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/buttonRegister"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="right"
+        android:layout_margin="@dimen/activity_margin_big"
+        android:background="@drawable/selector_dark_button_ripple"
+        android:enabled="false"
+        android:gravity="center"
+        android:text="@string/button_register"
+        android:textColor="@color/colorLightText"
+        android:textStyle="bold" />
+
+</LinearLayout>

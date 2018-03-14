@@ -1,0 +1,31 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_margin_small">8dp</dimen>
+    <dimen name="activity_margin_middle">12dp</dimen>
+    <dimen name="activity_margin_big">16dp</dimen>
+    <dimen name="activity_padding_small">8dp</dimen>
+    <dimen name="activity_padding_middle">12dp</dimen>
+    <dimen name="activity_padding_big">16dp</dimen>
+
+    <dimen name="items_margin_1dp">1dp</dimen>
+    <dimen name="items_margin_12dp">12dp</dimen>
+
+    <dimen name="title_height">45dp</dimen>
+    <dimen name="title_length">60dp</dimen>
+    <dimen name="nev_bar_height">55dp</dimen>
+
+    <dimen name="portrait_size_small">32dp</dimen>
+    <dimen name="portrait_size_middle">56dp</dimen>
+    <dimen name="portrait_size_big">96dp</dimen>
+    <dimen name="vector_image_size">24dp</dimen>
+
+    <dimen name="icon_size">36dp</dimen>
+
+    <dimen name="title_text_small">12sp</dimen>
+    <dimen name="title_text_middle">15sp</dimen>
+    <dimen name="title_text_big">20sp</dimen>
+
+    <dimen name="nev_default_size">0sp</dimen>
+    <dimen name="nev_selected_size">15sp</dimen>
+    <dimen name="nev_image_max_size">32dp</dimen>
+</resources>

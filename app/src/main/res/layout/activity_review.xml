@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/title_height"
+        android:gravity="center_vertical"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:id="@+id/llBack"
+            android:background="?android:attr/selectableItemBackground"
+            android:layout_width="@dimen/title_length"
+            android:layout_height="@dimen/title_height"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:clickable="true">
+            <ImageView
+                app:srcCompat="@drawable/icon_back"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:scaleType="fitCenter"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvTitle"
+            android:text="@string/title"
+            android:textColor="@color/colorTitleText"
+            android:textSize="@dimen/title_text_big"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/activity_margin_big" />
+
+    </LinearLayout>
+
+    <ListView
+        android:id="@+id/listView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:divider="@color/colorTransparentBackground"
+        android:dividerHeight="@dimen/items_margin_12dp" />
+
+    <TextView
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@color/colorDarkBackground" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorBackground"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/etReview"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/activity_margin_small"
+            android:layout_weight="1"/>
+
+        <Button
+            android:id="@+id/buttonSend"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_margin="@dimen/activity_margin_small"
+            android:background="@drawable/selector_dark_button_ripple"
+            android:text="评论"
+            android:textColor="@color/colorLightText"/>
+
+    </LinearLayout>
+
+</LinearLayout>

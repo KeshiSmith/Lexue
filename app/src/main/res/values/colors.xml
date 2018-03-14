@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#54C590</color>
+    <color name="colorPrimaryDark">#2DB083</color>
+    <color name="colorPrimaryDarker">#1DA073</color>
+    <color name="colorPrimaryDarkest">#0D9063</color>
+    <color name="colorAccent">#FF4081</color>
+
+    <color name="colorTransparentBackground">#00000000</color>
+    <color name="colorBackground">#FFFFFF</color>
+    <color name="colorDarkBackground">#EFEFEF</color>
+    <color name="colorDarkerBackground">#DEDEDE</color>
+    <color name="colorDarkestBackground">#ACACAC</color>
+
+    <color name="colorTitleText">#FFFFFF</color>
+
+    <color name="colorLightText">#FFFFFF</color>
+    <color name="colorDarkText">#767676</color>
+    <color name="colorDarkestText">#000000</color>
+
+    <color name="navBarBackground">#DDDDDD</color>
+    <color name="colorPrimaryBlue">#3F51B5</color>
+    <color name="colorPrimaryBlueDark">#303F9F</color>
+
+    <color name="iconDefault">#767676</color>
+    <color name="iconFavorite">#FFDD00</color>
+    <color name="iconHistory">#00AA66</color>
+    <color name="iconTag">#226688</color>
+    <color name="iconTopic">#FF3454</color>
+    <color name="iconLecture">#FF9235</color>
+    <color name="iconCourse">#35AEFF</color>
+    <color name="iconColumn">#A463FF</color>
+    <color name="iconReview">#00AA66</color>
+</resources>
